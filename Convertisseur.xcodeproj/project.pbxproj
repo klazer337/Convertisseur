@@ -12,6 +12,7 @@
 		93AC3ED62156A2DA00796C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AC3ED42156A2DA00796C24 /* Main.storyboard */; };
 		93AC3ED82156A2DC00796C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AC3ED72156A2DC00796C24 /* Assets.xcassets */; };
 		93AC3EDB2156A2DC00796C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AC3ED92156A2DC00796C24 /* LaunchScreen.storyboard */; };
+		93AC3EE32156AC8200796C24 /* ConvertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AC3EE22156AC8200796C24 /* ConvertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		93AC3ED72156A2DC00796C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93AC3EDA2156A2DC00796C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93AC3EDC2156A2DC00796C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93AC3EE22156AC8200796C24 /* ConvertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				93AC3ED02156A2DA00796C24 /* AppDelegate.swift */,
 				93AC3ED22156A2DA00796C24 /* ViewController.swift */,
+				93AC3EE22156AC8200796C24 /* ConvertController.swift */,
 				93AC3ED42156A2DA00796C24 /* Main.storyboard */,
 				93AC3ED72156A2DC00796C24 /* Assets.xcassets */,
 				93AC3ED92156A2DC00796C24 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				93AC3ED32156A2DA00796C24 /* ViewController.swift in Sources */,
 				93AC3ED12156A2DA00796C24 /* AppDelegate.swift in Sources */,
+				93AC3EE32156AC8200796C24 /* ConvertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
