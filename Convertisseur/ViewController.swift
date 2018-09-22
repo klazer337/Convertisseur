@@ -17,16 +17,27 @@ let DISTANCE = "Distance"
 
 class ViewController: UIViewController {
 
+    // Bouttons du UIcontroller principal
     @IBOutlet weak var deviseView: UIView!
     @IBOutlet weak var distanceView: UIView!
     @IBOutlet weak var temperatureView: UIView!
     
     // Constante
     let segueID = "Convert"     // Nom de l'identifiant de la SEGUE
+    var views: [UIView] = []    //
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        views = [deviseView, distanceView, temperatureView]
+        arrondirLesAngles()
+    }
+    
+    // arrondir les angles sur toutes les views
+    func arrondirLesAngles() {
+        for v in views {
+            v.layer.cornerRadius = 10
+        }
     }
     
     // Préparation de la SEGUE
@@ -34,10 +45,7 @@ class ViewController: UIViewController {
         if segue.identifier == segueID {                                            // vérification de l'identifiant de la SEGUE
             if let convertController = segue.destination as? ConvertController {    // On vérifie si la segue a bien comme destination le ConvertController
                 convertController.type = sender as? String                          // On affecte une valeur à la variable type du ConvertController
-                
             }
-            
-            
         }
     }
     
@@ -50,9 +58,6 @@ class ViewController: UIViewController {
         default: break
         }
     }
-    
-    
-    
 
 }
 
